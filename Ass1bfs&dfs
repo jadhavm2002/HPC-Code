@@ -1,3 +1,15 @@
+#check CUDA version
+!nvcc --version
+
+#Install CUDA package
+!pip install git+https://github.com/afnan47/cuda.git
+
+#Load nvcc version
+%load_ext nvcc_plugin
+
+
+
+
 %%writefile breadthfirst.cu
 #include <iostream>
 #include <queue>
